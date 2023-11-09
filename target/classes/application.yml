@@ -1,0 +1,17 @@
+server:
+  port: 9000
+
+spring:
+  h2:
+    console:
+      enabled: true
+  application:
+    name: KEYCLOAK-SERVICE
+
+    
+keycloak:
+  realm: springboot-keycloak
+  auth-server-url: http://localhost:8081/
+  resource: springboot-learn-keycloak #client-id
+  public-client: true
+  bearer-only: true

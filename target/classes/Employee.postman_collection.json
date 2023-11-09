@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "dc367209-3e8b-48ee-bf05-31677d1308f7",
+		"name": "Employee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26110999",
+		"_collection_link": "https://galactic-station-39539.postman.co/workspace/User-Section~60c55591-0f4d-4e67-8318-93db844f24d3/collection/26110999-dc367209-3e8b-48ee-bf05-31677d1308f7?action=share&source=collection_link&creator=26110999"
+	},
+	"item": [
+		{
+			"name": "getAllEmp",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/employee",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEmpById",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9000/api/employee/2",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"employee",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
